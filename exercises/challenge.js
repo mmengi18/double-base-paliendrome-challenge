@@ -5,7 +5,7 @@ GOAL: Read each question and write code to complete each task
       
 TEST: To test run the commands `npm run test` in your terminal
       at the root of this directory.(double-base-palindrome-challenge)
-      Don't worry about capitalization.
+      // Don't worry about capitalization.
 */
 
 /*
@@ -39,11 +39,15 @@ This question is from - https://projecteuler.net/problem=36
       /* 
             check if the first and last character is the same
             then check if the number is the same from the last middle and from the first middle
-            // this is what i mean
-                  // a-> b->c->                   -<c<-b <-a
+            // this is how we cheack
+                  // a-> b->c->                  -<c<-b <-a
             // if this characters are not the same then return false/
-      */
-
+    */     
+// now that we have checked if it is a palidrome, lets convert the number into base2
+      var input = 1000000
+      var output = input.toString(2)
+      console.log(output)
+      // console.log(output) will produce '11110100001001000000'
 const doubleBasePalindromeSum = function (/* base1, base2, upperLimit */) {
       
 }
